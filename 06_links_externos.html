@@ -1,0 +1,43 @@
+<!-- ESTRUTURA BÁSICA HTML -->
+<!DOCTYPE html>  <!-- É sempre a primeira linha, representa compatibilidade com HTML5 -->
+<html> <!-- <html> Todo conteúdo de uma página deve ficar entre a tag de <html>abertura e </htmlfechamento -->
+  <head> <!-- <head> ou cabeça, apenas o title fica visível ao usuário -->
+    <meta charset="utf-8"> <!-- INFORMA AO NAVEGADOR QUAL CONJUNTO DE CARACTERES ESTA UTILIZANDO, NO CASO 'UTF-8'-->
+    <title>Site do Fernando Lucas</title>
+  </head>
+  <body> <!-- <body> ou corpo, aqui é onde entra Menus, Imagens, Links,
+tudo o que você vê na tela fica aqui entre a tag de <body>abertura e </body>fechamento -->
+<!-- CABEÇALHOS -->
+    <h1>Seja bem-vindo ao meu site!</h1> <!-- <h1>  tag que compõe o cabeçalho, mais importante(maior) (titulo), Havendo intervalo de tamanho de <h1> até <h6>-->
+    <h6>Dois Vizinhos - PR</h6> <!-- <h6> tag que compõe o cabeçalho, menos importante(menor) (titulo)-->
+<!-- PARAGRAFOS -->
+<p>Eu sou um desenvolvedor Web!</p> <!-- <p> Tag que compõe o elemento paragrafo -->
+<p>E eu quero aprender cada dia mais!</p>
+
+<!-- LISTA -->
+    <h2>Receita Bolo</h2>
+    <h3>Ingredientes</h3>
+    <ul> <!-- <ul> Lista desordenada -->
+      <li>2 xícaras de farinha de trigo</li> <!--<li> Item de uma lista, independente se é ordenada ou desordenada -->
+      <li>2 ovos</li>
+      <li>1/2 xícara de leite</li>
+    </ul>
+    <h3>Modo de preparo</h3>
+    <ol> <!-- Lista ordenada -->
+      <li>Misture os ingredientes</li>
+      <li>Coloque no forma</li>
+      <li>Coloque no forno por 45minutos com fogo médio</li>
+      <li>Desliga o forno</li>
+    </ol>
+
+<!-- LINKS -->
+      <p> Para maiores informações acesse <a href="http://www.tudogostoso.com.br/" target="_self">receitas</a></p>
+<!-- Utilizamos a tag <a> dentro da tag <p> para inserir um link o qual foi denominado receitas,  que irá direcionar
+o usuário para um site de receitas, utilizando target _self para abrir o link na mesma página -->
+
+      <a href="http://www.tudogostoso.com.br/categorias/bolos-e-tortas-doces.php" target="_blank">
+        <img src="imagens/bolo.jpg" alt="Bolo" width="200" height="200">
+      </a> <!-- Utilizamos a tag <img> dentro da tag <a> para inserir um link na imagem, que irá direcionar o usuário
+diretamente para uma categoria especifica do site de receitas, utilizando target _blank para abrir o link em uma nova aba -->
+</body>
+</html>
