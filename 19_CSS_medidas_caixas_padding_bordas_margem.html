@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Medidas, Box, Padding, Border, Margin</title>
+    <style type="text/css">
+    body	{
+        display: inline-flex; /* 'flex' usado para colocar os elementos alinhasdos, outra maneira é usar 'column' para colocar os elementos em coluna  */
+        background-color: #ccc; /* cor de fundo em hexadecimal*/
+    }
+
+    .absoluto	{ /* .(name) utilizado para referenciar class */
+      width:	100px;  /* largura */
+      height:	100px;   /* altura */
+      margin-top: 10px; /* distanciar em 10px do topo da página */
+      margin-right: 5px; /* distanciar em 5px do elemento à direita */
+      text-align: center; /* alinha o conteúdo no centro*/
+      color: #fff; /* definindo cor da letra */
+      padding: 20px; /* margem interna, localiza-se entre a borda da caixa e o conteúdo*/
+      background-color:	red; /* atribuindo cor de fundo para vermelha */
+      border: 5px solid white; /* atribuindo borda de 5px solida da cor branca*/
+      box-sizing: border-box; /* define que a largura da caixa será estática, independente das alterações que eu faça nela, ela sempre vai ficar do tamanho que foi declarado */
+    }
+
+    .relativo	{
+      width:	100px;
+      height:	100px;
+      margin-left: 5px; /* distanciar em 5px do elemento à esquerda */
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      background-color: orange;
+      border: 5px inset white; /* atribuindo borda de 5px solida da cor branca*/
+      box-sizing: inherit; /* define que a largura da caixa será dinâmico, ou seja, qualquer atribuição de caracteristica pode vir a alterar o tamanho da caixa */
+    }
+      /*
+      border = {
+       color:
+      código hexadecimal: #ffc6d9
+      código rgb: rgb(255,235,0)
+      código rgba: rgb(255,235,0, 0.7)
+      código hsl: hsl(210,100%,40%)
+      código hsla: hsla(155,80%,35%,0.4)
+      palavra-chave: red, blue, green...etc
+      transparente: transparent
+
+      style:
+      none: nenhuma borda
+      hidden: equivalente a none
+      dotted: borda pontilhada
+      dashed: borda tracejada
+      solid: borda contínua
+      double: borda dupla
+      groove: borda entalhada
+      ridge: borda em ressalto
+      inset: borda em baixo relevo
+      outset: borda em alto relevo
+      }
+      */
+    </style>
+  </head>
+
+  <body>
+    <div class="absoluto">Caixa A</div>
+    <div class="relativo">Caixa B</div>
+  </body>
+</html>
