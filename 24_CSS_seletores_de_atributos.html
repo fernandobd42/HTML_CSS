@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Seletores de atributos(avançado)</title>
+    <style type="text/css">
+    [name="nome"] { /* o conteúdo seletor deve sempre estar entre colchetes []. [name='nome] atribui propriedades ao elemento
+que tiver o atributo name='nome'*/
+      border: 2px solid blue;
+    }
+
+    [type="email"] { /* [type='email'] atribui propriedades ao elemento que tiver o atributo type='email'*/
+      border: 1px solid red;
+    }
+
+    [type] { /* [type] atribui propriedades a todos elementos que tiverem o atributo 'type' */
+      background-color: black;
+      color: white;
+    }
+    </style>
+  </head>
+
+  <body>
+    Nome: <input type="text" name="nome">
+    Email: <input type="email" name="email">
+  </body>
+</html>
