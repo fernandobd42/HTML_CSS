@@ -1,0 +1,16 @@
+/* 00 - Red, 00 - Green, FF - Blue */
+/* maiúsculas e minúsculas são aceitas */
+#0000ff
+#0000FF
+/* caso um par seja composto por números iguais, pode-se	escrever apenas um deles */
+#00f
+#00F
+/* 0 - Red, 0 - Green, 255 - Blue	*/
+/* as notações com e sem espaços têm o mesmo efeito */
+rgb(0, 0, 255)
+rgb(0,0,255)
+/* também é possível indicar a porcentagem de cada cor */
+/* 0% - Red, 0% - Green, 100% - Blue */
+rgb(0%,0%,100%)
+
+/*Para mais informações acesse http://www.flextool.com.br/tabela_cores.html*/
