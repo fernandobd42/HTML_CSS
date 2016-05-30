@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introdução CSS TIPO, ID e CLASSES</title>
+    <style type="text/css">
+    h1 {  /* h1 utilizado para referenciar tipo */
+      display: block;
+      background-color: blue;
+    }
+
+    #a {  /* #(name) utilizado para referenciar id */
+        color: red;
+    }
+
+    .bold {  /* .(name) utilizado para referenciar class --> ATRIBUI CARACTERISTICAS GENÉRICAS */
+      font-weight: bold; /* todas as classes que tem bold ficarão em negrito */
+    }
+
+    .b { /* .(name) utilizado para referenciar class --> ATRIBUI CARACTERISTICAS ESPECÍFICAS */
+      color: yellow;
+    }
+
+    .c { /* .(name) utilizado para referenciar class --> ATRIBUI CARACTERISTICAS ESPECÍFICAS */
+      color: pink;
+    }
+    /* nota-se que é possível atribuir dois nomes a uma classe, para assim utilizar o segundo nome para atribuir
+    caracteristicas genéricas e o primeiro nome para atribuir caracteristicas específicas a cada classe,
+    tendo em vista um excelente reaproveimento de código :) */
+    </style>
+  </head>
+
+  <body>
+    <h1>Introdução ao CSS</h1>
+    <p id="a">Aprendizado é...</p>
+    <p class="b bold">Aprendizado é...</p>
+    <p class="c bold">Construção.</p>
+  </body>
+</html>
