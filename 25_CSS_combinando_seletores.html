@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Combinando Seletores</title>
+    <style type="text/css">
+h1.titulo { /* todos h1 com a classe título */
+  font-family: sans-serif;
+  color: blue;
+}
+
+main h1 { /* todos h1 que estejam em qualquer nível dentro de main */
+  text-decoration: underline;
+}
+
+
+main > p { /* todos p que sejam filhos diretos de main */
+  color: red;
+}
+
+h1 + p { /* todos p que tenham como irmão imediato um h1 */
+  font-size: 22px;
+}
+
+section ~ h2 { /* todos h2 que tenham section como irmão */
+  color: green;
+}
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="titulo">Será selecionado por h1.titulo e main h1</h1>
+      <h1 class="cumprimento">Será selecionado por main h1</h1>
+      <p class="titulo">Será selecionado por main > p e h1 + p</p>
+      <p>Será selecionado por main > p</p>
+      <section>
+          <h1>main é meu avô e eu herdo a do main h1</h1>
+          <h2>Section é meu pai, não meu irmão.</h2>
+          <p>Não será selecionado pelo seletor main > p, pois não é filho direto do main</p>
+      </section>
+      <h2>Será selecionado por section ~ h2</h2>
+  </main>
+  </body>
+</html>
