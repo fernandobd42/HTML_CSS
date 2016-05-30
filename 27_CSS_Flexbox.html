@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox</title>
+    <style type="text/css">
+    /* Flexbox permite que os elementos alterem sua altura, largura e orgem para melhor preencher o espaço disponível,
+se adaptando da melhor maneira. */
+    .container-flex	{
+      /*atinge implementações antigas do Safari Chrome */
+      display: -webkit-box;
+      display: -webkit-flex;
+      /*atinge implementações antigas do Firefox*/
+      display: -moz-flex;
+      /*atinge implementações antigas do Internet explorer */
+      display: -ms-flexbox;
+      /*atinge todas as implementações que utilizem a especificação atual */
+      display: flex;
+}
+
+    .container {
+      display: flex; /* propriedade básica que atribui como padrão a direção dos elementos em linha */
+      flex-flow: row nowrap; /* define o sentido e a quebra de linhas com a propriedade flex-flow */
+      width: 100%;
+      height: 650px;
+      background-color: gray;
+      justify-content: space-around; /* define o alinhamento dos itens no container, no eixo princopal;
+podendo ter os seguintes valores:
+  flex-start: alinha todos os itens no começo do container;
+  flex-end: alinha todos os itens no final do container;
+  center: centraliza todos os itens no container;
+  space-between: alinha os itens no container de modo que o espaço livre fique entre eles;
+  space-around: alinha os itens no container de modo que todos tenham a mesma	quantidade de espaço ao redor de si; */
+    align-items: flex-start; /* define o alinhamento dos itens de um container no eixo cruzado(vertical caso os itens estejam em lonha.)
+podendo ter os seguintes valores:
+  flex-start: alinha todos os itens no começo do container;
+  flex-end: alinha todos os itens no final do container;
+  center: centraliza todos os itens no container;
+  baseline: alinha todos os itens de acordo com a linha base do texto em seu conteúdo;
+  stretch:  estica  todos os  elementos para  que preencham o espaço  do container.É o valor padrão.*/
+    align-content: center;/* define o alinhamento das linhas, diferente do justify-content que faz em itens individuais,
+o align-content alinha todos de uma vez.
+podendo ter os mesmo valores que o align-itens*/
+    }
+
+    .item {
+      padding: 10px;
+      background-color: green;
+      flex: 0 0 50px;
+/* o flex recebe tres valores,
+flex-grow que define o tamanho de um item em ralação aos demais.
+flexshrink que especifica a proporção que um item encolherá em relação aos outros do container, quando nao houver espaço o suficiente para todos.
+flex-basis que é o tamanho minimo que um elemento encolherá antes de ir para a próxima linha*/
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item box1">1</div>
+      <div class="item box2">2</div>
+      <div class="item box3">3</div>
+      <div class="item box4">4</div>
+      <div class="item box5">5</div>
+    </div>
+  </body>
+</html>
