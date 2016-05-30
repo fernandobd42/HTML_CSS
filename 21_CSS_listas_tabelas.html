@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Listas e Tabelas</title>
+    <style type="text/css">
+    body {
+      background-color: #606060; /* atribui cor de fundo para a página*/
+    }
+
+    li {
+        height: 20px;
+        width: 100px;
+        list-style: square; /* square(quadrado) caracteristica do estilo da lista, existe varios outros por
+   ex: 'disc', 'decimal', 'none', 'circle' e atc*/
+        display: column; /* posiciona os li's em forma de coluna*/
+        padding: 10px;
+        color: #fff; /* atribui cor ao list-style para os elementos li */
+      }
+
+      table {
+        border-collapse: collapse; /* propriedade que une as bordas da tabela, o padrão é 'separate'*/
+      }
+
+      td, th {
+        border: 1px solid white; /*1px -> grossura da borda, solid -> tipo da borda, white -> cor da borda */
+        padding: 5px; /* margem interna, entre a borda e o conteúdo */
+        background-color: tomato;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <ul class="menu"> <!-- Lista desordenada -->
+      <li>Início</li> <!-- Item da lista-->
+      <li>Sobre</li>
+      <li>Produtos</li>
+      <li>Contato</li>
+    </ul>
+
+    <table>  <!-- Tabela -->
+      <tr> <!-- Coluna -->
+        <th>Segunda-Feira</th> <!-- Cabeçalho-->
+        <th>Terça-Feira</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Desenvolvimento WEB</td> <!-- <td> Linha da tabela, rowspan atribui a quantidade de linhas a ocupar-->
+        <td>Algoritmos</td>
+      </tr>
+      <tr>
+        <td>Lógica</td>
+      </tr>
+    </table>
+
+<br><br> <!-- salta linha -->
+    <table>  <!-- Tabela -->
+      <tr> <!-- Coluna -->
+        <th>Segunda-Feira</th> <!-- Cabeçalho-->
+        <th>Terça-Feira</th>
+      </tr>
+      <tr>
+        <td colspan="2">Desenvolvimento WEB</td> <!-- <td> Linha da tabela, colspan atribui a quantidade de células a ocupar -->
+      </tr>
+      <tr>
+        <td>Lógica</td>
+        <td>Algoritmos</td>
+      </tr>
+    </table>
+
+  </body>
+</html>
