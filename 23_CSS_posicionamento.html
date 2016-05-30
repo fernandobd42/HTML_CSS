@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Posicionamento</title>
+    <style type="text/css">
+    .posicao { /* ATRIBUI CARACTERISTICAS GENÉRICAS */
+      height: 100px;
+      width: 100px;
+      color: #fff;
+    }
+
+    .absoluta {
+      background-color: red;
+      position: absolute; /* Posiçao absoluta */
+      top: 10px;
+      left: 20px;
+      z-index: 2; /* Sabendo que alguns elementos se sobrepoem de acordo com ordem que eles foram escritos no HTML,
+utiliza-se o z-index para alterar a ordem de exibição, com excessão dos elementos estáticos */
+    }
+
+    .fixa {
+      background-color: green;
+      position: fixed; /* Posição fixa */
+      top: 0;
+      left: 100px;
+      z-index: 1;
+    }
+
+    .relativa {
+      background-color: blue;
+      position: relative; /* Posição relativa */
+      top: 40px;
+      left: 180px;
+    }
+
+    .estatica {
+      background-color: black;
+      position: static;  /* Posição estática */
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="posicao absoluta">Absoluta</div>
+    <div class="posicao fixa">Fixa</div>
+    <div class="posicao relativa">Relativa</div>
+    <div class="posicao estatica">Estática</div>
+  </body>
+</html>
