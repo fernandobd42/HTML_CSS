@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pseudo classes</title>
+    <style type="text/css">
+      li:first-child { /* atribui cor azul para o primeiro elemento */
+        color: blue;
+      }
+
+      li:last-child { /* atribui cor vermelha para o último elemento */
+        color: red;
+      }
+
+      li:nth-child(2) { /* atribui cor verde para o segundo elemento */
+        color: green;
+      }
+
+      li:hover { /* atribui fonte em negrito e cor de fundo #aaa(cinza), o hover é acionado quando o mouse está o elemento */
+        font-weight: bold;
+        background-color: #aaa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul> <!-- lista desordenada -->
+      <li>Número 1</li> <!-- item da lista -->
+      <li>Número 2</li>
+      <li>Número 3</li>
+      <li>Número 4</li>
+    </ul>
+  </body>
+</html>
