@@ -1,0 +1,212 @@
+/* Para refrescar a memória:
+type -> referencia um tipo de tag definida no HTML. Exemplo:
+h1 {
+  font-size: 10pt;
+}
+
+.exemple -> referencia uma classe definida no HTML. Exemplo:
+.exemple {
+  font-weight: bold;
+}
+
+
+#exemple -> referencia um id definido no HTML. Exemplo:
+#exemple {
+  color: #fff;
+}
+ */
+
+/*
+GERAL
+*/
+.button { /* class"button" */
+  color: #fff; /* cor da letra */
+  background-color: #009933; /* cor de fundo */
+  padding: 10px 30px; /* margem interna: 10px de altura e 30px de largura */
+  border-radius: 20px; /* deixa o botao com um formato arredondado: 20pixels */
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; /* atribui as fontes, caso não encontre a primeira tenta a segunda...*/
+  font-size: 14px; /* tamanho da letra: 14px*/
+  font-weight: bold; /* intensidade da fonte: negrito */
+  text-decoration: none; /* decoração: nenhuma */
+}
+
+body { /* tipo body */
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; /* atribui as fontes, caso não encontre a primeira tenta a segunda...*/
+  color: #333; /* cor */
+}
+
+h1, h2, h3 { /* atribuindo propriedades aos tipos h1, h2, h3*/
+  font-family: "Roboto Slab", "Helvetica Neue", Arial, sans-serif; /* atribui as fontes, caso não encontre a primeira tenta a segunda...*/
+  font-weight: bold; /* intensidade da fonte: negrito */
+}
+
+* { /* atribuindo o border-box(cabeçalho) para dentro do box-sizing(página), para que assim cada página ocupe exatamente
+o tamanho da tela, ou seja, o cabeçalho se torna um componente da página. Para testar, apague o código e confira que
+cada página excede o preenchimento da tela, pois o cabeçalho agora agrega e não compõe uma página  */
+  box-sizing: border-box;
+}
+
+section[id] { /* atribuindo a todos os [id] que estão dentro de section*/
+  padding-top: 50px; /* margem interna do topo de 50px */
+}
+
+/*
+NAVEGAÇÃO
+*/
+nav { /* tipo nav */
+  display: flex; /* cria um 'flex' container a nível de bloco */
+  position: fixed; /* posição fixa */
+  width: 100%; /* largura 100% */
+  justify-content: space-around; /* alinha os itens no container de modo que todos tenham a mesma	quantidade de espaço ao redor de si */
+  background-color: rgba(0, 0, 0, 0.5);
+/* O RGBA funciona da mesma forma que o RGB. No caso do RGBA, além dos 3 canais RGB (Red, Green e Blue) há um quarto
+canal, A (Alpha) que controla a opacidade da cor em um intervalo de 0(transparente) e 1(denso)  */
+}
+
+nav > a { /* todos a que sejam filhos diretos de nav */
+  text-decoration: none; /* decoração do texto: nenhuma */
+  color: #fff; /* cor da letra */
+  font-weight: bold; /* espessura fonte */
+  font-size: 28px; /* tamanho da fonte: 28pixels */
+  font-family: Pacifico, serif; /* fonte */
+}
+
+nav ul { /* todos ul que estejam em qualquer nível dentro de nav */
+  list-style: none; /* decoração da lista: nenhuma */
+  padding: 0; /* margem interna: 0 */
+  margin: 0; /* margem externa: 0*/
+  display: flex; /* cria um 'flex' container a nível de bloco */
+  align-items: center; /* posiciona os 'flex' Items verticalmente, de acordo com o espaço vertical do 'flex' no centro */
+  flex-direction: row; /* posiciona os 'flex' em linha */
+  width: 50%; /* o ul ocupará 50% de largura tela */
+}
+
+nav ul li { /* todos li que estejam a qualquer nível dentro ul que estejam dentro de nav */
+  text-align: center; /* alinha os textos no centro */
+  width: 25%; /* cada li ocupará 25% de largura do lu  */
+}
+
+nav ul li a {  /* todos a que estejam a qualquer nível dentro li que estejam dentro de ul que estejam dentro de nav */
+  display: inline-block; /* alinha os 'flex' em linha */
+  padding: 10px 0; /* margem interna: 10px de altura e 0 de largura */
+  width: 100%; /* cada a ocupará 100% de largura do li  */
+  text-decoration: none; /* decoração do texto: nenhuma */
+  color: #fff; /* cor da letra */
+}
+
+/*
+CABEÇALHO
+*/
+header { /* página principal */
+  background-image: url('/home/fernando/workspace/Site/imagens/img0.jpg'); /* imagem de fundo: url('caminho')*/
+  background-size: cover; /* tamanho da imagem de fundo vai cobrir(cover) a tela */
+  background-position: center; /* posição da imagem de fundo: centro */
+  background-repeat: no-repeat; /* não repetir a imagem mesmo que tenha espaço */
+  color: #FFF; /* cor da letra */
+  display: flex; /* cria um 'flex' container a nível de bloco */
+  flex-direction: column; /* posiciona os 'flex' em coluna */
+  align-items: center; /* posiciona os 'flex' Items verticalmente, de acordo com o espaço vertical do 'flex' no centro */
+  text-align: center; /* alinha os textos no centro */
+  justify-content: center; /* centraliza todos os itens no container */
+  height: 100vh; /* altura: recebe 100vh, (viewpoint height) ou altura do ponto de vista, no caso 100 preencherá 100% do navegador */
+}
+
+header p, section p { /* todos p que estejam em qualquer nível dentro de header e section */
+  margin-bottom: 14px; /* margem inferior: 14pixels */
+}
+
+.tit { /* class="tit" */
+  font-weight: bold;; /* espessura da fonte: negrito */
+  font-size: 35pt; /* tamanho da fonte: 35pontos */
+}
+
+.titp { /* class="titp" */
+  font-size: 15pt; /* tamanho da fonte: 15pontos */
+}
+
+/*
+SOBRE
+*/
+.sobre { /* class="sobre" */
+  display: flex; /* cria um 'flex' container a nível de bloco */
+  flex-direction: column; /* posiciona os 'flex' em coluna */
+  align-items: center; /* posiciona os 'flex' Items verticalmente, de acordo com o espaço vertical do 'flex' no centro */
+  text-align: center; /* alinha os textos no centro */
+  justify-content: center; /* centraliza todos os itens no container */
+  background-color: #009933; /* cor de fundo */
+  color: #fff; /* cor da letra */
+  height: 100vh; /* altura: recebe 100vh, (viewpoint height) ou altura do ponto de vista, no caso 100 preencherá 100% do navegador */
+  padding-bottom: 58px; /* margem interna inferior: 58pixels */
+}
+
+.sobre .button { /* atribui ou sobrescreve caracteristicas específicas ao button .sobre */
+  background-color: #fff; /* cor de fundo */
+  color: #000; /* cor da letra */
+}
+
+/*
+CONTEUDO
+*/
+.conteudo { /* class="conteudo" */
+  display: flex; /* cria um 'flex' container a nível de bloco */
+  flex-direction: row; /* posiciona os 'flex' em linha */
+  align-items: center; /* posiciona os 'flex' Items verticalmente, de acordo com o espaço vertical do 'flex' no centro */
+  text-align: center; /* alinha os textos no centro */
+  justify-content: space-around; /* alinha os itens no container de modo que todos tenham a mesma quantidade de espaço ao redor de si */
+  height: 100vh; /* altura: recebe 100vh, (viewpoint height) ou altura do ponto de vista, no caso 100 preencherá 100% do navegador */
+}
+
+/*
+PORTFÓLIO
+*/
+.portfolio { /* class="portfolio" */
+  display: flex; /* cria um 'flex' container a nível de bloco */
+  flex-direction: column;  /* posiciona os 'flex' em coluna */
+  align-items: center; /* posiciona os 'flex' Items verticalmente, de acordo com o espaço vertical do 'flex' no centro */
+}
+
+.portfolio h2 { /* todos h2 que estejam em qualquer nível dentro de .portfolio */
+  margin-bottom: 20px; /* margem inferior: 58pixels */
+}
+
+.portfolio img { /* todas img que estejam em qualquer nível dentro de .portfolio */
+  width: 100%; /* largura de 100% */
+  height: 100vh; /* altura: recebe 100vh, (viewpoint height) ou altura do ponto de vista, no caso 100 preencherá 100% do navegador */
+}
+
+/*
+CONTATO
+*/
+.contato { /* class="portfolio" */
+  display: flex; /* cria um 'flex' container a nível de bloco */
+  flex-direction: column;  /* posiciona os 'flex' em coluna */
+  align-items: center; /* posiciona os 'flex' Items verticalmente, de acordo com o espaço vertical do 'flex' no centro */
+  text-align: center; /* alinha os textos no centro */
+  height: 100vh; /* altura: recebe 100vh, (viewpoint height) ou altura do ponto de vista, no caso 100 preencherá 100% do navegador */
+  justify-content: center; /* centraliza todos os itens no container */
+}
+
+form { /* tipo form */
+  display: flex; /* cria um 'flex' container a nível de bloco */
+  flex-flow: column; /* define o sentido da 'flex' */
+  width: 100%; /* largura de 100% */
+  margin-bottom: 20px; /* margem inferior: 20pixels */
+}
+
+input,
+select,
+textarea { /* atribuindo propriedades aos tipos input, select, textarea */
+  width: 100%; /* largura de 100% */
+  margin-bottom: 15px; /* margem inferior: 15pixels */
+}
+
+/*
+FOOTER
+*/
+footer { /* tipo footer */
+  text-align: center; /* alinha os textos no centro */
+  padding: 5px; /* margem interna de 5pixels */
+  background-color: #009933; /* cor de fundo */
+  color: #FFF; /*cor das letras */
+  margin-top: 58px; /* margem do topo: 58pixels
+}
