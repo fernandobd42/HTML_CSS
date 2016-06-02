@@ -1,0 +1,79 @@
+<!DOCTYPE	html>
+<!-- atributo lang define a linguagem predominante no site -->
+<html	lang="pt-br">
+  <head>
+		<meta	charset="utf-8"> <!-- declaração da codificação dos caracteres-->
+		<title>Introdução HTML & CSS</title> <!-- título da página -->
+		<meta	name="description"	content=""> <!-- descrição da página. visível para os buscadores -->
+		<meta	name="viewport"	content="width=device-width,	initial-scale=1"> <!-- força o navegador a exibir o site de acordo com o tamanho do dispositivo -->
+    <link	rel="stylesheet"	href="css/normalize.css"> <!--	reseta	os	estilos	do	navegador	-->
+		<link	rel="stylesheet"	href="css/index.css"> <!--	estilo	próprio	-->
+</head>
+<body> <!--	conteúdo	da	página	-->
+  <nav> <!-- navegação da pagina (Início, Sobre, Conteúdo, Portfólio, Contato)-->
+    <a href="#inicio">Início</a> <!-- o href="inicio" direciona o usuário para a seção que contém o id="inicio" -->
+    <ul> <!-- Cria uma lista parar agrupar os itens abaixo e assim separa-los do link Início -->
+      <li><a href="#sobre">Sobre</a></li> <!-- direciona o usuário para a seção que contém o id="sobre" -->
+      <li><a href="#conteudo">Conteúdo</a></li> <!-- direciona o usuário para a seção que contém o id="conteudo" -->
+      <li><a href="#portfolio">Portfólio</a></li> <!-- direciona o usuário para a seção que contém o id="portfolio" -->
+      <li><a href="#contato">Contato</a></li> <!-- direciona o usuário para a seção que contém o id="contato" -->
+    </ul>
+  </nav>
+
+  <header id="inicio"> <!-- Agrupa os elementos da página inicio -->
+    <h1 class="tit">Olá, seja bem vindo</h1> <!-- título -->
+    <p class="titp">front-end com HTML e CSS</p> <!-- paragrafo-->
+    <a href="#sobre" class="button">VER SOBRE</a> <!-- link com button -->
+  </header>
+
+  <section id="sobre" class="sobre"> <!-- Agrupa os elementos da página sobre-->
+    <h2 class="tit">Sobre</h2> <!-- sub título -->
+    <p class="titp">Introdução básica a linguagem de marcação HTML e a linguagem de estilização CSS</p> <!-- paragrafo-->
+    <a href="#conteudo" class="button">VER CONTEÚDO</a> <!-- link com button -->
+  </section>
+
+  <section id="conteudo" class="conteudo"> <!-- Agrupa os elementos da página conteudo -->
+    <article class="conteudo"> <!-- Agrupa os elementos para subdividir a página -->
+      <img src="imagens/html5.jpg" alt="HTML5" /> <!-- imagem -->
+      <h3>Estrutura o conteúdo da página</h3> <!-- subsub título-->
+    </article>
+
+    <article class="conteudo"> <!-- Agrupa os elementos para subdividir a página -->
+      <img src="imagens/css3.jpg" alt="CSS3" /> <!-- imagem -->
+      <h3>Estiliza o conteúdo da página</h3> <!-- subsub título-->
+    </article>
+  </section>
+
+  <section id="portfolio" class="portfolio"> <!-- Agrupa os elementos da página portfolio -->
+     <h2>Portfólio</h2> <!-- sub titulo -->
+     <img src="imagens/img1.jpg" alt="Montanhas no horizonte"> <!-- imagem -->
+     <img src="imagens/img2.jpg" alt="Montanhas no horizonte"> <!-- imagem -->
+     <img src="imagens/img3.jpg" alt="Montanhas no horizonte"> <!-- imagem -->
+     <img src="imagens/img4.jpg" alt="Montanhas no horizonte"> <!-- imagem -->
+  </section>
+
+  <section id="contato" class="contato"> <!-- Agrupa os elementos da página contato -->
+    <fieldset> <!-- Agrupa os elementos de um formulário dentro de uma 'box' -->
+      <legend class="titp">Contato</legend> <!-- título do formulário -->
+        <p>Qualquer dúvida, não hesite estabelecer o contato</p> <!-- paragrafo  -->
+        <form action="/contato-sucesso" method="post"> <!-- o forumulário -->
+          <input type="text" name="nome" placeholder="Nome"> <!-- campo para inserir o nome
+(placeholder é um label com uma dica dentro do campo, que tem o intuito de ajudar o usuário a entender como ele deve preenche-lo)-->
+          <input type="email" name="email" placeholder="Email"> <!-- campo para inserir o email -->
+          <select name="assunto"> <!-- select (campo que apresenta um menu de opções )-->
+              <option selected> Selecione um assunto </option> <!-- opção padrão -->
+              <option value="HTML">HTML</option> <!-- segunda opção -->
+              <option value="CSS">CSS</option> <!-- primeira opção -->
+              <option value="Outro">Outro</option> <!-- última opção -->
+          </select>
+          <textarea name="mensagem" placeholder="Mensagem" rows="4"></textarea> <!-- area de texto, definindo tamanho de 4 linhas(rows="4")-->
+          <button type="submit" name="button">Enviar</button> <!-- botão submit-->
+        </form>
+    </fieldset>
+  </section>
+
+  <footer> <!-- rodapé -->
+    <p> Fim, agora você já sabe o bastante para poder começar aprender JavaScript, que é a linguagem que faz as coisas acontecerem.</p>
+  </footer>
+</body>
+</html>
