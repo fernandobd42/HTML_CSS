@@ -12,5 +12,8 @@ rgb(0,0,255)
 /* também é possível indicar a porcentagem de cada cor */
 /* 0% - Red, 0% - Green, 100% - Blue */
 rgb(0%,0%,100%)
+rgba(0, 0, 0, 0.5);
+/* O RGBA funciona da mesma forma que o RGB. No caso do RGBA, além dos 3 canais RGB (Red, Green e Blue) há um quarto
+canal, A (Alpha) que controla a opacidade da cor em um intervalo de 0(transparente) e 1(denso)  */
 
 /*Para mais informações acesse http://www.flextool.com.br/tabela_cores.html*/
