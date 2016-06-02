@@ -28,3 +28,5 @@
 25. [CSS - Combinando seletores](https://github.com/fernandobd42/HTML_CSS/blob/master/25_CSS_combinando_seletores.html)
 26. [CSS - Pseudo classes](https://github.com/fernandobd42/HTML_CSS/blob/master/26_CSS_pseudo_classes.html)
 27. [CSS - Flexbox](https://github.com/fernandobd42/HTML_CSS/blob/master/27_CSS_Flexbox.html)
+28. [Página final - HTML](https://github.com/fernandobd42/HTML_CSS/blob/master/28_index.html#L9)
+29. [Página final - CSS](https://github.com/fernandobd42/HTML_CSS/blob/master/css/index.css)
